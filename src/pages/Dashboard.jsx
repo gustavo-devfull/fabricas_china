@@ -73,7 +73,7 @@ export default function Dashboard() {
       setProgressoExportacao(0);
   
       try {
-        const response = await fetch("http://localhost:3001/api/export-images", {
+        const response = await fetch("/api/export-images", {
           method: "POST",
           body: formData,
         });
